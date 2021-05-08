@@ -41,6 +41,7 @@ width: 100%;
 border-width: 2px;
 border-style: solid;
 border-radius: 15px;
+
 }
 a:hover {
     background-color: tomato;
@@ -70,6 +71,8 @@ footer{
     margin-bottom: 0;
     height: 30%;
     background-image: url("/../../assets/images/wave-footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-contenido{

@@ -27,7 +27,7 @@ import {
         display: 'flex',
 
 
-        height: '140px',
+        height: '205px',
         width: '100%',
         color: 'white',
         opacity: 1,
@@ -47,6 +47,7 @@ import {
         animate('0.5s')
       ]),
     ]),
+    
     trigger('equipo', [
       // ...
       state('open', style({
@@ -56,14 +57,12 @@ import {
         margin: '30px auto'
       })),
       transition('open => closed', [
-        animate('1s')
+        animate('1000ms ease-in')
       ]),
       transition('closed => open', [
-        animate('1s')
-      ]),
-      transition('open => close', [
-        animate('0.5s')
-      ]),
+        animate('1s ease-out')
+      ])
+      
     ]),
   ],
 })
