@@ -71,6 +71,12 @@ export class AppComponent implements AfterViewInit {
   scrollEquipo: number = 0;
   isOpen = true;
   activado: boolean;
+
+  title = 'borrar';
+  
+  constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) {
+    this.activado = true;
+  }
   ngAfterViewInit() {
     this.scrollEquipo = this.equipo.nativeElement.offsetTop
     console.log(this.equipo.nativeElement.offsetTop)
@@ -93,9 +99,6 @@ export class AppComponent implements AfterViewInit {
 
 
   }
-  title = 'borrar';
-  constructor(@Inject(DOCUMENT) private document: Document, @Inject(PLATFORM_ID) private platformId: Object) {
-    this.activado = true;
-  }
+ 
 
 }
