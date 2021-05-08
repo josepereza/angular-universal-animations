@@ -1,0 +1,92 @@
+.background-image-container{
+    height: 100vh;
+
+    background-image: url("/../../assets/images/wave-hero-background.svg");
+background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.container{
+    width: 30%;
+    height: 50%;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+
+.section-container{
+width: 100%;
+}
+.about{
+    width:50% ;
+    margin: auto ;
+}
+.equipo{
+    margin-top: 40px;
+    text-align: center;
+}
+.cartel{
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.cartel a{  
+    color:white;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 10px;
+    border-color: #f7f4f4;
+border-width: 2px;
+border-style: solid;
+border-radius: 15px;
+}
+a:hover {
+    background-color: tomato;
+}
+
+h1{
+    font-size: 3em;
+}
+/* .navbar{
+    color:white;
+    
+} */
+
+.navbar h3{
+    margin-top: 20%;
+}
+.componentes{
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px;
+}
+footer{
+   
+    margin-bottom: 0;
+    height: 30%;
+    background-image: url("/../../assets/images/wave-footer.svg");
+}
+
+.footer-contenido{
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+    
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+   }
+
+   @media only screen and (max-width: 600px) {
+    .navbar h3 {
+       margin-top: 1px;
+      }
+      
+    }
